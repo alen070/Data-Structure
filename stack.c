@@ -1,19 +1,14 @@
 #include <stdio.h>
-
 void push();
 void pop();
 void display();
-
 int item, top = -1, a[20], maxsize, ch = 0, i;
-
 void main() {
     printf("Enter the limit: ");
     scanf("%d", &maxsize);
-    
     while (ch != 4) {
         printf("Enter choice (1: Push, 2: Pop, 3: Display, 4: Exit): ");
         scanf("%d", &ch);
-        
         switch (ch) {
             case 1: push(); break;
             case 2: pop(); break;
